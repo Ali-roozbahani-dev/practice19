@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+
+*{   
+    box-sizing: border-box;
+    font-family: "Vazirmatn", sans-serif;
+}
+body{   
+  @apply flex flex-col justify-center items-center     
+}
+
+label{
+  @apply text-right mb-2 font-bold text-[15px] block text-[#494949]
+}
+
+.form-button{
+  @apply cursor-pointer rounded-md px-3 py-1 block font-bold text-white
+}
+.form-container{
+  @apply shadow-[0_0_10px_1px_rgb(90,90,90)] rounded-[10px] py-5 px-8
+}
+
+input{
+  @apply flex rounded-[5px] mb-4 w-full px-1 py-1 border    
+}
+input::placeholder{
+  @apply text-xs
+}
+.inpGroupPass{
+  @apply flex justify-center items-center border rounded-[5px] mb-5       
+}
+
+.error-container{
+  @apply  mt-5
+}
+
+.error-item{
+  @apply my-3 p-2 rounded-sm text-right bg-red-200
+}
+ 
+
+input:focus{
+    outline: none;
+}
+.panelContainer , .registerContainer{ 
+    margin-top: 20px;   
+    width: 400px;     
+    padding: 20px;
+}
+.panelContainer{
+    margin-top: 150px;
+}
+.inpGroupPass input{
+    border-left: none;
+    border: none;
+    margin: 0;
+}
+.swal-rtl {
+  direction: rtl !important;
+  text-align: right !important;  
+}
+.swal2-actions{
+  @apply w-full justify-between px-8 flex-row-reverse
+}
